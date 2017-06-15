@@ -8,7 +8,7 @@
     <dsContext>
         <groupDatasource id="customersDs"
                          class="com.rtcab.cev.entity.Customer"
-                         view="_local">
+                         view="customer-view">
             <query>
                 <![CDATA[select e from cev$Customer e]]>
             </query>

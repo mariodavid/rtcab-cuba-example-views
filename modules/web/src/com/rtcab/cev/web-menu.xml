@@ -2,7 +2,7 @@
 <menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
     <menu id="application-cev"
           insertBefore="administration">
-        <item screen="cev$Customer.browse"/>
         <item screen="cev$CustomerType.browse"/>
+        <item screen="cev$Customer.browse"/>
     </menu>
 </menu-config>
