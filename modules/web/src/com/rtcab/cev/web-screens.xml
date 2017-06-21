@@ -9,4 +9,8 @@
             template="com/rtcab/cev/web/customer/customer-browse.xml"/>
     <screen id="cev$Customer.edit"
             template="com/rtcab/cev/web/customer/customer-edit.xml"/>
+    <screen id="cev$Order.browse"
+            template="com/rtcab/cev/web/order/order-browse.xml"/>
+    <screen id="cev$Order.edit"
+            template="com/rtcab/cev/web/order/order-edit.xml"/>
 </screen-config>

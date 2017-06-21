@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="com.rtcab.cev.web.order.OrderEdit"
+        datasource="orderDs"
+        focusComponent="fieldGroup"
+        messagesPack="com.rtcab.cev.web.order">
+    <dsContext>
+        <datasource id="orderDs"
+                    class="com.rtcab.cev.entity.Order"
+                    view="order-view"/>
+        <collectionDatasource id="customersDs"
+                              class="com.rtcab.cev.entity.Customer"
+                              view="_minimal">
+            <query>
+                <![CDATA[select e from cev$Customer e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="windowActions"
+            spacing="true">
+        <fieldGroup id="fieldGroup"
+                    datasource="orderDs">
+            <column width="250px">
+                <field optionsDatasource="customersDs"
+                       property="customer"/>
+                <field property="orderDate"/>
+            </column>
+        </fieldGroup>
+        <frame id="windowActions"
+               screen="editWindowActions"/>
+    </layout>
+</window>

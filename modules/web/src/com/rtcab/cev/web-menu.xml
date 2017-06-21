@@ -4,5 +4,6 @@
           insertBefore="administration">
         <item screen="cev$CustomerType.browse"/>
         <item screen="cev$Customer.browse"/>
+        <item screen="cev$Order.browse"/>
     </menu>
 </menu-config>

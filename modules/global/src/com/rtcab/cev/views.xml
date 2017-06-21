@@ -6,4 +6,10 @@
         <property name="type"
                   view="_minimal"/>
     </view>
+    <view class="com.rtcab.cev.entity.Order"
+          extends="_local"
+          name="order-view">
+        <property name="customer"
+                  view="_minimal"/>
+    </view>
 </views>

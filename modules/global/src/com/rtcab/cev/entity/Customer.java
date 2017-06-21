@@ -10,7 +10,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 
-@NamePattern("%s|name")
+@NamePattern("%s - %s|name,type")
 @Table(name = "CEV_CUSTOMER")
 @Entity(name = "cev$Customer")
 public class Customer extends StandardEntity {
